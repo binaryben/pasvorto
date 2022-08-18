@@ -1,0 +1,6 @@
+#!/usr/bin/env ts-node
+
+const clipboard = require('clipboardy')
+// import { pw } from './dist'
+
+clipboard.writeSync('Correct-Horse-Battery-Staple-1234')
