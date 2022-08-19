@@ -1,8 +1,9 @@
 // import CryptoRandom from 'crypto-random'
 import RandomAPI from 'random-org'
+import ncp from 'copy-paste'
 import { pwnedPassword } from 'hibp'
 import zxcvbn from 'zxcvbn'
-import { lookup } from './../lists'
+import { lookup } from './lists'
 
 export class Pasvorto {
   private _random: RandomAPI
@@ -178,8 +179,11 @@ export class Pasvorto {
     this._pwnageTesting()
       .then(result => {
         this._debug("validator:pwned", `Pwned: ${result}`)
-        console.log(this._password)
-    })
+        ncp.copy(this._password.toString(), () => {
+          console.log('\nNew password successfully copied to your clipboard.')
+          console.log('Please paste it into your password manager now.\n')
+        })
+      })
   }
 
   get = () => {
