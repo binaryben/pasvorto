@@ -91,3 +91,10 @@ To put that in perspective, something like this...
 ```
 Udder-Bonehead-Late-Fading-Parkway-2696
 ```
+
+## Prior Art
+
+Many exist. I relied on these two websites a lot though. Check them out:
+
+* [Diceware FAQ](https://theworld.com/~reinhold/dicewarefaq.html)
+* [Diceware Generator](https://www.rempe.us/diceware)
